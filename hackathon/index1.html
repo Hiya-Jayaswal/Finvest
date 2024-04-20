@@ -1,0 +1,76 @@
+
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+            <title>Dashboard</title>
+        </head>
+        <body>
+            <nav>
+                <div class="logo-name">
+                    <div class="logo-image">
+                       <img src="images/logo.png" alt="">
+                    </div>
+        
+                    <span class="logo_name">Finvest</span>
+                </div>
+        
+                <div class="menu-items">
+                    <ul class="nav-links">
+                        <li><a href="./index.html">
+                            <i class="uil uil-estate"></i>
+                            <span class="index.html">Home</span>
+                        </a></li>
+                        <li><a href="index-stock.html">
+                            <i class="uil uil-chart"></i>
+                            <span class="link-name">Stock</span>
+                        </a></li>
+                        <li><a href="index-gold.html">
+                            <i class="uil-gold"></i>
+                            <span class="link-name">Gold</span>
+                        </a></li>
+                        <li><a href="index1.html">
+                            <i class="uil-chat-bubble-user"></i>
+                            <span class="link-name">Advisor</span>
+                        </a></li>
+                    <ul class="logout-mode">
+                        <li><a href="./login.php">
+                            <i class="uil uil-signout"></i>
+                            <span class="link-name">Logout</span>
+                        </a></li>
+        
+                        <li class="mode">
+                            <a href="#">
+                                <i class="uil uil-moon"></i>
+                            <span class="link-name">Dark Mode</span>
+                        </a>
+        
+                        <div class="mode-toggle">
+                          <span class="switch"></span>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        
+            <section class="dashboard">
+            </section>
+        
+            <script src="script.js"></script>
+        </body>
+        </html>
+    <h2>ARYA!</h2>
+    <div class="input-box">
+        <input type="text" id="prompt" placeholder="Type here ..." />
+        <input type="submit" onclick="submitQuestion()" value="Submit">
+    </div>
+    <div id="loading" class = "loading" style="display: none;">Loading...</div>
+
+    <div id="message-container" class="message-container"></div> 
+    <script src="script1.js" async defer></script>
+</body>
+</html>

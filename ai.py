@@ -1,8 +1,9 @@
 import google.generativeai as genai
 import requests
 from bs4 import BeautifulSoup
+import os 
 
-API_KEY = "AIzaSyCZg8rEBIZYKchotxqWEkgo5-fcGqVIrv4"
+load_dotenv()
 
 genai.configure(api_key=API_KEY)
 
@@ -50,23 +51,22 @@ def ai(question):
     return response.text
 
 
-def price(ticker, exchange="NSE"):
+def price(ticker):
     ticker = ticker.upper()
-    exchange = exchange.upper()
-    url = f"https://www.google.com/finance/quote/{ticker}:{exchange}"
+    url = f"https://www.google.com/finance/quote/{ticker}:NSE"
     response = requests.get(url)
     soup = BeautifulSoup(response.text, "html.parser")
-    class1 = "YMlKec fxKbKc"
-    price = (soup.find(class_=class1)).text.replace("₹", "")
-    name = soup.find(class_="zzDege").text
-    print(price)
+    price = soup.find(class_="YMlKec fxKbKc").text
+    return price
 
 
-def name(ticker, exchange="NSE"):
+def name(ticker):
     ticker = ticker.upper()
-    exchange = exchange.upper()
-    url = f"https://www.google.com/finance/quote/{ticker}:{exchange}"
+    url = f"https://www.google.com/finance/quote/{ticker}:NSE"
     response = requests.get(url)
     soup = BeautifulSoup(response.text, "html.parser")
     name = soup.find(class_="zzDege").text
-    print(name)
+    return name
+
+
+
