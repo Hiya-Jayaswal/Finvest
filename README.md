@@ -7,4 +7,9 @@ DARK MODE:
 ADVISOR:
 ![image](https://github.com/user-attachments/assets/57434ecb-0ca8-4a15-a9f2-f2910836a0b3)
 
+UPDATED STOCK MARKET:
+![image](https://github.com/user-attachments/assets/9b3ef12a-cd2b-4caa-800c-bb9696aeae2e)
+
+UPDATED STOCK PRICES:
+![image](https://github.com/user-attachments/assets/7a9c22dd-e729-4144-8473-203c02496ebf)
 
